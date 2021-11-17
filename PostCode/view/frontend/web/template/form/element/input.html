@@ -1,0 +1,14 @@
+<input class="input-text" type="hidden" data-bind="
+    value: value,
+    valueUpdate: 'keyup',
+    hasFocus: focused,
+    attr: {
+        name: inputName,
+        placeholder: placeholder,
+        'aria-describedby': getDescriptionId(),
+        'aria-required': required,
+        'aria-invalid': error() ? true : 'false',
+        id: uid,
+        disabled: disabled
+    }" />
+<input type="text" class="postcode-1" data-bind="value: first"/><span> - </span><input type="text" class="postcode-2" data-bind="value: last"/>
